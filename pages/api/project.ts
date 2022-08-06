@@ -2,6 +2,7 @@
 import Axios from "axios";
 import { NextApiRequest, NextApiResponse } from "next"
 import langColors from "./../../lib/lang-colors.json"
+import githubPAT from './key.json'
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const axios = Axios.create({
@@ -12,8 +13,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       'Expires': '0',
     },
     auth: {
-      username: 'ProSavage',
-      password: process.env.GITHUB_TOKEN!!
+      username: 'narashini',
+      password: githubPAT.key
     }
   })
   const projectName = req.body.name;

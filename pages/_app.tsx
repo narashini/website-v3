@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-       <title>ProSavage</title>
+       <title>narashini</title>
       </Head>
       <Wrapper>
         <ContentContainer>
@@ -30,7 +30,7 @@ function AppWrapper({ Component, pageProps }) {
   const themeToggleContext = useContext(ThemeToggleContext);
 
   const getTheme = () => {
-    return themeToggleContext.theme === "light" ? LightTheme : DarkTheme;
+    return themeToggleContext.theme === "light" ? DarkTheme : DarkTheme;
   };
 
   return (

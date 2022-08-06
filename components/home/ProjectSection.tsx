@@ -10,36 +10,11 @@ function ProjectSection(props) {
         <Header>PROJECTS</Header>
         <Container>
             <Project
-                key={"enigmapool"}
-                user={"ProSavage"}
-                project={"enigmapool"}
+                key={"website-v3"}
+                user={"narashini"}
+                project={"website-v3"}
                 social={[]}
             />
-            <Project
-                key={"store"}
-                user="SavageLabs"
-                project="store"
-                social={[]}
-            />
-            <Project
-                key={"personal-site-v2"}
-                user="ProSavage"
-                project="personal-site-v2"
-                social={[]}
-            />
-            <Project
-                key={"next-js-template"}
-                user={"ProSavage"}
-                project={"next-js-template"}
-                social={[]}
-            />
-            <Project
-                key={"coming-soon"}
-                user="notesets"
-                project="coming-soon"
-                social={[]}
-            />
-
         </Container>
     </Wrapper>
 }

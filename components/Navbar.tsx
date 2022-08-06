@@ -11,19 +11,20 @@ import Link from "next/link";
 function Navbar(props) {
   const themeContext = useContext(ThemeContext);
   const themeToggleContext = useContext(ThemeToggleContext);
+  const currentURL = "http://localhost:3000/";
 
   const links = [
     {
+      name: "Home",
+      href: `${currentURL}`,
+    },
+    {
       name: "GitHub",
-      href: "https://github.com/ProSavage",
+      href: "https://github.com/narashini",
     },
     {
-      name: "LinkedIn",
-      href: "https://www.linkedin.com/in/prosavage/",
-    },
-    {
-      name: "Blog",
-      href: "/blog",
+      name: "Telegram",
+      href: "https://t.me/narashinidev",
     },
   ];
 
@@ -36,25 +37,11 @@ function Navbar(props) {
   return (
     <Wrapper>
       <Item>
-        <Link href={"/"}>
-          <Logo height={50} src={`/img/${getLogoPath()}`} alt="ProSavage" />
-        </Link>
-      </Item>
-      <Item>
         {links.map((link) => (
           <LinkWrapper key={link.href}>
             <ActiveLink href={link.href}>{link.name}</ActiveLink>
           </LinkWrapper>
         ))}
-      </Item>
-      <Item>
-        <ClickableThemeContainer>
-          {themeContext === DarkTheme ? (
-            <Sun onClick={() => themeToggleContext.setTheme("light")} />
-          ) : (
-            <Moon onClick={() => themeToggleContext.setTheme("dark")} />
-          )}
-        </ClickableThemeContainer>
       </Item>
     </Wrapper>
   );
@@ -84,11 +71,6 @@ const Wrapper = styled.div`
 const Item = styled.div`
   display: flex;
   align-items: center;
-`;
-
-const Logo = styled.img`
-  cursor: pointer;
-  fill: ${(props: PropsTheme) => props.theme.color};
 `;
 
 const LinkWrapper = styled.div`

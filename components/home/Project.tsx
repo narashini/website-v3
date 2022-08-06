@@ -112,7 +112,7 @@ const Container = styled.div`
   margin: 5px;
   padding: 10px 20px;
 
-  border: 2px solid #eaeaea;
+  
   border-radius: 5px;
   max-width: 900px;
 

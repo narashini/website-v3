@@ -5,11 +5,12 @@ function Header(props) {
   return <HeaderWrapper>
     <TextWrapper>
       <HeaderText>
-        Hi, I'm <CrossThrough><LessStrong>Naman Gupta</LessStrong>,
-          <br />a.k.a</CrossThrough> <LessStrong>ProSavage</LessStrong>
+        Hiya, I'm <LessStrong>narashini</LessStrong>
       </HeaderText>
-      <p>Owner of <strong><ClickableLink
-        href={"https://enigmapool.com"}>EnigmaPool</ClickableLink></strong></p>
+      <p>Owner @ <strong><ClickableLink
+        href={"https://donutmc.xyz"}>Donut Community</ClickableLink></strong></p>
+      <p>Founder @ <strong><ClickableLink
+        href={"https://milkcarton.digital"}>Milk Services</ClickableLink></strong></p>
     </TextWrapper>
   </HeaderWrapper>
 }
