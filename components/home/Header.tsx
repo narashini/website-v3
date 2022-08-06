@@ -20,8 +20,14 @@ export default Header;
 const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 200%;
   height: 100vh;
+  background: url(/img/header_background.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  left: 0;
+  width: 100%;
 `
 
 const HeaderText = styled.p`

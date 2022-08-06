@@ -7,7 +7,8 @@ function ProjectSection(props) {
 
    
     return <Wrapper>
-        <Header>PROJECTS</Header>
+        <Header>Projects</Header>
+        <p>goofy ahh website takes a few seconds to load</p>
         <Container>
             <Project
                 key={"website-v3"}

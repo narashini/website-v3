@@ -19,6 +19,10 @@ function Navbar(props) {
       href: `${currentURL}`,
     },
     {
+      name: "Projects",
+      href: `${currentURL}projects`,
+    },
+    {
       name: "GitHub",
       href: "https://github.com/narashini",
     },
